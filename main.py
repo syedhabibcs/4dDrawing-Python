@@ -50,7 +50,6 @@ def key_pressed(*args):
 
     # If escape is pressed, kill everything.
     if args[0] == b'\x1b':
-        writeOutput()
         sys.exit()
 
     elif args[0] == b'w':
@@ -82,24 +81,6 @@ def key_pressed(*args):
                 _cords[c] = np.matmul(_cords[c], rx)
 
     _polygonToDrawInfo = calculate2d_points()
-
-
-def writeOutput():
-    file = open("output.txt", 'w')  # create a file
-    file.write(_title)   # write object type
-
-    for c in range(len(_cells)):
-        file.write('-{:d}\n'.format(c+1))  # write cell number
-        for v in _cells[c]:  # write vertex and adjacent
-            file.write('-{:d} {:d} {:d} {:d}\n'.format(v[0] + 1, v[1] + 1, v[2] + 1, v[3] + 1))
-
-    file.write('0\n')
-
-    for v in range(len(_cords)):
-        file.write('-{:d} {:6f} {:6f} {:6f} {:6f}\n'.format(v + 1, _cords[v][0], _cords[v][1], _cords[v][2], _cords[v][3]))
-
-    file.write("0\n")
-    file.close()
 
 
 def refresh2d():
