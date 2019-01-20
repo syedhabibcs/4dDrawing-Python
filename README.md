@@ -33,4 +33,7 @@ Simply execute main.py with the path to one of the file in inputFiles. For examp
 
 <img src="./screenshots/Cell120v1.png">
 <img src="./screenshots/Cell120v2.png">
-<img src="./screenshots/Cell120v3.png">
+
+<img src="./screenshots/DodecahedralPrismv1.png">
+<img src="./screenshots/DodecahedralPrismv2.png">
+<img src="./screenshots/DodecahedralPrismv3.png">
