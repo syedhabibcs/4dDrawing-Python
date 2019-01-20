@@ -1,6 +1,6 @@
 ## Academic Project (Advanced Analysis of Algorithms) Mar 2018
 
-Project to draw 4D objects (polytops).
+Project to draw 4D objects (polytopes). See screenshots below!
 
 ### Background
 
@@ -22,6 +22,7 @@ Note: if installing pyopengl on Windows, there is some problem with the latest v
 ### Running
 Simply execute main.py with the path to one of the file in inputFiles. For example 'python main.py ./inputFiles/cell8.txt'
 
+### Screenshots
 
 <img src="./screenshots/Cell8v1.png">
 <img src="./screenshots/Cell8v2.png">
